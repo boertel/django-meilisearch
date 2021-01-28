@@ -4,7 +4,7 @@ from search.register import get_registered_models, add_to_search
 
 
 class Command(BaseCommand):
-    help = ""
+    help = "trigger a sync with search"
 
     def add_arguments(self, parser):
         # TODO sync only one model
