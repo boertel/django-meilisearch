@@ -1,7 +1,7 @@
 from .register import register
 from .client import client
 
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 VERSION = __version__
 
