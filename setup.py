@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 
+version="0.1.1"
+
 setup(
     name="django-meilisearch",
-    version="0.1",
+    version=version,
     description="A Django app to wrap your django model to a meilisearch index",
     long_description=open('README.rst').read(),
     author="Benjamin Oertel",
@@ -10,7 +12,7 @@ setup(
     url="https://boertel.github.io/django-meilisearch",
     license="BSD-3-Clause",
     include_package_data=True,
-    packages=find_packages(),
+    packages=['django_meilisearch', 'django_meilisearch.management', 'django_meilisearch.management.commands'],
     install_requires=[
         "Django>=2.0",
         "meilisearch >= 0.13.0",
