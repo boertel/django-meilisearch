@@ -70,8 +70,8 @@ def create_if_needed(opts, obj, **kwargs):
     uid = opts.uid
     if callable(uid):
         uid = uid(obj)
-    index = client.get_index(uid)
     try:
+        index = client.get_index(uid)
         create_or_update_document(index, **kwargs)
     except Exception as error:
         if error.error_code == "index_not_found":
