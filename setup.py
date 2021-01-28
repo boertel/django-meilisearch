@@ -11,10 +11,10 @@ setup(
     license="BSD-3-Clause",
     include_package_data=True,
     packages=find_packages(),
-    install_requires-[
+    install_requires=[
         "Django>=2.0",
         "meilisearch >= 0.13.0",
-    ]
+    ],
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
